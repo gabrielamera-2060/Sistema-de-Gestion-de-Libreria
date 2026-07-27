@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sistema_de_Gestion_de_Biblioteca.Generales
 {
-    internal class ArchivoJson
+    public class ArchivoJson
     {
     }
 }
