@@ -13,9 +13,39 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
         private string correo;
 
         public int Id { get => id; set => id = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string GeneroLiterario { get => generoLiterario; set => generoLiterario = value; }
-        public int CantidadLibros { get => cantidadLibros; set => cantidadLibros = value; }
+        public string Nombre 
+        { 
+            get => nombre;
+            set  
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new Exception("El nombre del autor es obligatorio.");
+
+                nombre = value;
+            }
+        }
+        public string GeneroLiterario 
+        { 
+            get => generoLiterario;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new Exception("El género literario es obligatorio.");
+
+                generoLiterario = value;
+            }
+        }
+        public int CantidadLibros 
+        { 
+            get => cantidadLibros; 
+            set
+            {
+                if (value < 0)
+                    throw new Exception("La cantidad de libros no puede ser negativa.");
+
+                cantidadLibros = value;
+            }
+        }
         public string Correo { get => correo; set => correo = value; }
 
         public Autor (int id, string nombre, string generoLiterario, int cantidadLibros, string correo)
@@ -25,6 +55,16 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
             this.GeneroLiterario = generoLiterario;
             this.CantidadLibros = cantidadLibros;
             this.Correo = correo;
+        }
+
+        public void Imprimir()
+        {
+            Console.WriteLine("===== AUTOR =====");
+            Console.WriteLine($"ID: {Id}");
+            Console.WriteLine($"Nombre: {Nombre}");
+            Console.WriteLine($"Género literario: {GeneroLiterario}");
+            Console.WriteLine($"Cantidad de libros: {CantidadLibros}");
+            Console.WriteLine($"Correo: {Correo}");
         }
     }
 }
