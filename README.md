@@ -8,3 +8,4 @@ creacion de constructores
 27-07-2026
 se termminaron de editar las clases
 cliente, autor, libro.
+se editaron las clases de database, ArchivoJson y venta 

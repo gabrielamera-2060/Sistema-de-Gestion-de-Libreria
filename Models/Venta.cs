@@ -38,7 +38,7 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
         }
         public Cliente Cliente1 { get => cliente; set => cliente = value; }
 
-        public Venta (int id, Libro libro, Cliente cliente, DateTime fechaVenta, decimal precio)
+        public Venta (int id, Libro libro, Cliente cliente, DateTime fechaVenta, decimal total)
         {
             this.Id = id;
             this.Libro = libro;

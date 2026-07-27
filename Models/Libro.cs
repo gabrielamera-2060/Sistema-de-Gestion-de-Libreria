@@ -64,7 +64,7 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
             }
         }
 
-        public Libro(int id, string titulo, string genero, int anioPublicacion, bool disponible, Autor autor)
+        public Libro(int id, string titulo, string genero, int anioPublicacion, bool disponible, decimal precio, Autor autor)
         {
             this.Id = id;
             this.Titulo = titulo;
@@ -72,6 +72,7 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
             this.AnioPublicacion = anioPublicacion;
             this.Disponible = disponible;
             this.Autor = autor;
+            this.Precio = precio;
         }
 
         public void Imprimir()

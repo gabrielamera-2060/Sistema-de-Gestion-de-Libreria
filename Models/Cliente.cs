@@ -32,7 +32,7 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
                 if (string.IsNullOrWhiteSpace(value))
                     throw new Exception("El apellido del autor es obligatorio.");
 
-                Apellido = value;
+                apellido = value;
             }
         }
         public string Telefono 
