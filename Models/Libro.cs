@@ -11,6 +11,7 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
         private string genero;
         private int anioPublicacion;
         private bool disponible;
+        private Autor Autor;
 
 
         public int Id { get => id; set => id = value; }
@@ -18,14 +19,16 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
         public string Genero { get => genero; set => genero = value; }
         public int AnioPublicacion { get => anioPublicacion; set => anioPublicacion = value; }
         public bool Disponible { get => disponible; set => disponible = value; }
+        public Autor Autor1 { get => Autor; set => Autor = value; }
 
-        public Libro(int id, string titulo, string genero, int anioPublicacion, bool disponible)
+        public Libro(int id, string titulo, string genero, int anioPublicacion, bool disponible, Autor autor)
         {
-            Id = id;
-            Titulo = titulo;
-            Genero = genero;
-            AnioPublicacion = anioPublicacion;
-            Disponible = disponible;
+            this.Id = id;
+            this.Titulo = titulo;
+            this.Genero = genero;
+            this.AnioPublicacion = anioPublicacion;
+            this.Disponible = disponible;
+            this.Autor = autor;
         }
     }
 }

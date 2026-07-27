@@ -17,5 +17,14 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
         public string GeneroLiterario { get => generoLiterario; set => generoLiterario = value; }
         public int CantidadLibros { get => cantidadLibros; set => cantidadLibros = value; }
         public string Correo { get => correo; set => correo = value; }
+
+        public Autor (int id, string nombre, string generoLiterario, int cantidadLibros, string correo)
+        {
+            this.Id = id;
+            this.Nombre = nombre;
+            this.GeneroLiterario = generoLiterario;
+            this.CantidadLibros = cantidadLibros;
+            this.Correo = correo;
+        }
     }
 }
