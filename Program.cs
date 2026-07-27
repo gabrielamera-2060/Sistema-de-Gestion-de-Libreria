@@ -116,90 +116,110 @@ do
         case 20:
             EliminarVenta();
             break;
+
         case 21:
-            Console.WriteLine("Saliendo del programa...");
+            Console.WriteLine("Saliendo...");
             break;
 
-        default:
-            Console.WriteLine("Opción inválida.");
-            Console.ReadKey();
-            break;
-    } 
-
+    }
 } while (opcion != 21);
 
+void EliminarVenta()
+{
+    Console.Clear();
+}
+
+void ActualizarVenta()
+{
+    Console.Clear();
+}
+
+void BuscarVenta()
+{
+    Console.Clear();
+}
+
+void ListarVentas()
+{
+    Console.Clear();
+}
+
+void crearVenta()
+{
+    Console.Clear();
+}
 
 void EliminarCliente()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void ActualizarCliente()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void BuscarCliente()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void ListarClientes()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void crearCliente()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void EliminarLibro()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void ActualizarLibro()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void BuscarLibro()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void Listarlibros()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void crearLibro()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void EliminarAutor()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void ActualizarAutor()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void BuscarAutor()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void listarAutores()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
 
 void crearAutor()
 {
-    throw new NotImplementedException();
+    Console.Clear();
 }
