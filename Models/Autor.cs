@@ -59,7 +59,6 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
 
         public void Imprimir()
         {
-            Console.WriteLine("===== AUTOR =====");
             Console.WriteLine($"ID: {Id}");
             Console.WriteLine($"Nombre: {Nombre}");
             Console.WriteLine($"Género literario: {GeneroLiterario}");

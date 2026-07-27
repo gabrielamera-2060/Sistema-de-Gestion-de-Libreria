@@ -70,7 +70,6 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
 
         public void Imprimir()
         {
-            Console.WriteLine("===== CLIENTE =====");
             Console.WriteLine($"ID: {Id}");
             Console.WriteLine($"Nombre: {Nombre}");
             Console.WriteLine($"Apellido: {Apellido}");

@@ -76,7 +76,6 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
 
         public void Imprimir()
         {
-            Console.WriteLine("===== LIBRO =====");
             Console.WriteLine($"ID: {Id}");
             Console.WriteLine($"Título: {Titulo}");
             Console.WriteLine($"Autor: {Autor.Nombre}");
