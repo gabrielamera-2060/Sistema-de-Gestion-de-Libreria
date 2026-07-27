@@ -51,9 +51,9 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
         {
             Console.WriteLine($"Venta: {Id}");
             Console.WriteLine($"Libro: {Libro.Titulo}");
-            Console.WriteLine($"Cliente: {Cliente1}");
-            Console.WriteLine($"Fecha: {FechaVenta}");
             Console.WriteLine($"Total: {Total}");
+            Console.WriteLine($"Cliente: {Cliente1.Nombre} {Cliente1.Apellido}"); Console.WriteLine($"Fecha: {FechaVenta}");
+
         }
     }
 }
