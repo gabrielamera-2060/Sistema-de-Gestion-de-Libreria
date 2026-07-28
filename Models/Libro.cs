@@ -12,7 +12,7 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
         private int anioPublicacion;
         private bool disponible;
         private decimal precio;
-        private Autor Autor;
+        private Autor autor;
 
 
         public int Id { get => id; set => id = value; }
@@ -40,17 +40,7 @@ namespace Sistema_de_Gestion_de_Biblioteca.Models
         }
         public int AnioPublicacion { get => anioPublicacion; set => anioPublicacion = value; }
         public bool Disponible { get => disponible; set => disponible = value; }
-        public Autor Autor1 
-        { 
-            get => Autor; 
-            set 
-            {
-                if (value == null)
-                    throw new Exception("Debe seleccionar un autor.");
-
-                Autor = value;
-            }
-        }
+        public Autor Autor { get => autor; set => autor = value; }
 
         public decimal Precio 
         { 

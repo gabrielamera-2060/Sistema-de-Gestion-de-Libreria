@@ -468,7 +468,7 @@ void ActualizarLibro()
 
         if (objAutor != null)
         {
-            objLibro.Autor1 = objAutor;
+            objLibro.Autor = objAutor;
         }
 
         Database.GuardarLibros();
